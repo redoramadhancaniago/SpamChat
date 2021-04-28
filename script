@@ -44,12 +44,12 @@ function doSpam(element) {
   if(element.innerHTML == 'ALFA'){
     var input = getElementByXpath("//*[@id=\"main\"]/footer/div[1]/div[2]/div/div[2]");
     if(input.innerHTML == '' || input.innerHTML == null){
-      window.alert('iseng banget sih spam ke orang.');
+      window.alert('happy spam');
       return;
     }
-    element.innerHTML = 'Berhenti atuh';
+    element.innerHTML = 'Berhenti';
     message = input.innerHTML;
-    var interval = parseInt (prompt('Astaga ga baik spam orang, dikit aja jumlahnya:', '500'));
+    var interval = parseInt (prompt('Masukan Jumlahnya:', '500'));
     repeatingSpamFunction = window.setInterval(function(){
       sendMessage();
     }, interval);
